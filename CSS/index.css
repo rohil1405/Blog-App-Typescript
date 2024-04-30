@@ -1,0 +1,183 @@
+* {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0%;
+}
+
+header {
+    display: flex;
+    background-color: skyblue;
+    align-items: center;
+    justify-content: space-between;
+    height: 55px;
+}
+
+#nav {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    text-decoration: none;
+}
+
+#home {
+    text-decoration: none;
+    color: black;
+}
+
+#search {
+    border-radius: 7px;
+    align-items: center;
+    font-size: 16px;
+    width: 180px;
+    margin-right: 50px;
+    padding: 6px;
+}
+
+#filter,
+#limit {
+    border-radius: 7px;
+    align-items: center;
+    font-size: 16px;
+    width: 80px;
+    margin-right: 50px;
+    padding: 6px;
+}
+
+#box {
+    width: 250px;
+    margin: 20px;
+    border-radius: 3px;
+    border: 1px solid black;
+    cursor: pointer;
+    height: 410px;
+    text-align: center;
+    box-shadow: 0 0 10px black;
+}
+
+#box:hover {
+    transition: 0.1s;
+    transform: translateY(-10px)
+}
+
+#data {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px, 100px;
+}
+
+#tag {
+    padding: 10px;
+    align-items: center;
+    /* background-color: whitesmoke; */
+}
+
+#content {
+    padding: 10px;
+}
+
+#body {
+    overflow: auto;
+    scrollbar-width: none;
+    height: 200px;
+    padding: 10px;
+    /* background-color: #B0B0B0; */
+}
+
+#adduser,
+#update {
+    border-radius: 7px;
+    align-items: center;
+    font-size: 16px;
+    margin-right: 50px;
+    padding: 6px;
+    background-color: lightblue;
+}
+
+#postId {
+    padding: 15px;
+    background-color: #8AC7D8;
+}
+
+.lds-dual-ring {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    justify-content: center;
+    margin-left: 46%;
+}
+
+#remove,
+#edit {
+    padding: 4px;
+    border: 1px solid black;
+    border-radius: 4px;
+    margin: 4px;
+    font-size: 15px;
+    background-color: #8AC7D8;
+    cursor: pointer;
+}
+
+.lds-dual-ring:after {
+    content: " ";
+    display: block;
+    width: 64px;
+    height: 64px;
+    margin: 8px;
+    border-radius: 60%;
+    border: 6px solid #C7C7C7;
+    border-color: #C7C7C7 transparent #B0B0B0 transparent;
+    animation: lds-dual-ring 0.8s linear infinite;
+}
+
+@keyframes lds-dual-ring {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#add,
+#editForm {
+    border: 1px solid black;
+    padding: 10px;
+    width: 20%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    background-color: whitesmoke;
+}
+
+#addValue {
+    padding: 7px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: #ADD8E6;
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+#addTitle,
+#addTags,
+#addBody,
+#addUserId {
+    border-radius: 3px;
+    align-items: center;
+    font-size: 16px;
+    width: 200px;
+    padding: 5px;
+    margin: 4px;
+}
+
+#buttons {
+    display: flex;
+    gap: 8rem;
+    background-color: #8AC7D8;
+}

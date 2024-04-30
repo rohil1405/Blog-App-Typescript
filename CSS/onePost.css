@@ -1,0 +1,57 @@
+* {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#header {
+    border: 1px solid black;
+    width: 500px;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 130px;
+    box-shadow: 0 0 50px black;
+    overflow: auto;
+    scrollbar-width: none;
+    background-color: skyblue;
+}
+
+#home {
+    border: 2px solid black;
+    border-radius: 5px;
+    font-size: 15px;
+    padding: 5px;
+    cursor: pointer;
+    background-color: #8AC7D8;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.lds-dual-ring {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    justify-content: center;
+    margin-left: 46%;
+}
+
+.lds-dual-ring:after {
+    content: " ";
+    display: block;
+    width: 64px;
+    height: 64px;
+    margin: 8px;
+    border-radius: 60%;
+    border: 6px solid #C7C7C7;
+    border-color: #C7C7C7 transparent #B0B0B0 transparent;
+    animation: lds-dual-ring 0.8s linear infinite;
+}
+
+@keyframes lds-dual-ring {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}

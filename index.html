@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam || Blog</title>
+    <link rel="stylesheet" href="./CSS/index.css">
+</head>
+<body>
+    <header>
+        <div id="nav">
+            <h2>Rohil || Blog-Post</h2>
+            <h3><a href="index.html" id="home">Home</a></h3>
+        </div>
+        <div>
+            <select id="limit" onchange="getPost()">
+                <option value="30">All</option>
+                <option value="50">50</option>
+                <option value="75">75</option>
+                <option value="100">100</option>
+                <option value="125">125</option>
+                <option value="150">150</option>
+            </select>
+        
+        
+            <select id="filter" onchange="getPost()">
+                <option value="ASC">ASC</option>
+                <option value="DESC">DESC</option>
+            </select>
+        
+        
+            <input type="text" id="search" placeholder="Search here"> 
+            <button id="adduser" onclick="displayAdd()">Add Post</button>
+        </div>
+    </header>
+    <section>
+        <div id="add">
+            <input id="addTitle" type="text" placeholder="Enter a Text" required/><br>
+            <textarea id='addBody' rows="3" cols="25" type="text" placeholder="Enter Body of the Post" required ></textarea><br>
+            <input id='addTags' type="text" placeholder="Enter Tags" required /><br>
+            <input id="addUserId" type="number" placeholder="Enter UserId" required/><br>
+            <button id="addValue">Add Post</button>
+        </div>
+
+        <div id="editForm">
+            <input id="addTitle" type="text" placeholder="Enter a Text" required/><br>
+            <textarea id='addBody' rows="3" cols="25" type="text" placeholder="Enter Body of the Post" required ></textarea><br>
+            <input id='addTags' type="text" placeholder="Enter Tags" required /><br>
+            <input id="addUserId" type="number" placeholder="Enter UserId" required/><br>
+            <button id="update">Update</button>
+        </div>
+    </section>
+
+    <section id="loader">
+        <div class="lds-dual-ring"></div>
+    </section>
+
+    <div id="data"> </div>
+
+    <script src="./dist/index.js"></script>
+</body>
+</html>
